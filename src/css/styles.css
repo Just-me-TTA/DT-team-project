@@ -24,10 +24,11 @@
   --secondary-backround: #EAF7E5;
   --hero-background: #A1C487;
   --orange-color: #FC8A11;
-
 }
+
 .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;}
+  margin: 0 auto;
+}
