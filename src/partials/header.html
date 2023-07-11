@@ -1,26 +1,64 @@
 <header class="header">
-  <div class="header-cont">
-    <nav class="nav-header">
-      <ul class="list-menu">
-        <li class="list-header">
-          <a href="./header.html" class="list-link">How it works</a>
-        </li>
-        <li class="list-header">
-          <a href="./vegetables.html" class="list-link">Vegetables</a>
-        </li>
-        <li class="list-header"><a href="" class="list-link">Contacts</a></li>
-      </ul>
-      <ul class="list-menu">
-        <li class="list-top">
-          <a href="./index.html" class="header-logo">veggieboost</a>
-        </li>
-        <li class="list-top">
-            <svg class="basket-button-but" width="24" height="24">
-              <use href="//src/img/svg/basket.svg"></use>
+  <div class="container header-container" is-hidden data-menu>
+    <div class="header-header">
+      <nav class="nav-header">
+        <ul class="list-menu list">
+          <li class="list-header">
+            <a href="./header.html" class="list-link">How it works</a>
+          </li>
+          <li class="list-header">
+            <a href="./vegetables.html" class="list-link">Vegetables</a>
+          </li>
+          <li class="list-header">
+            <a href="" class="list-link">Contacts</a>
+          </li>
+        </ul>
+        <a href="" class="header-logo">
+          <svg class="veggie-button" width="16" height="16">
+            <use href="../img/svg/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          veggieboost</a
+        >
+      </nav>
+
+      <button type="button" class="basket-button">
+        <svg class="basket-button-but" width="24" height="24">
+          <use href="../img/svg/symbol-defs.svg#icon-shopping-cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- <button class="mob-button data-menu-open" type="button">
+      <svg class="menu-button" width="24" height="24">
+        <use href="../img/svg/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div> -->
+  <!-- <div class="mob-menu js-menu-container">
+        <div class="close-class">
+          <button class="close-button data-menu-close" type="button">
+            <svg class="close-button-mob" width="24" height="24">
+              <use href="../img/svg/symbol-defs.svg#icon-x"></use>
             </svg>
           </button>
-        </li>
-      </ul>
-    </nav>
-  </div>
+          <ul class="veggie-items">
+            <li>
+              <a href="" class="header-logo">
+                <svg class="veggie-button" width="16" height="16">
+                  <use href="/img/svg/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                veggieboost</a
+              >
+            </li>
+            <li class="basket">
+              <a href="" class="list-header-link">
+                <svg class="basket-button-but" width="24" height="24">
+                  <use
+                    href="../img/svg/symbol-defs.svg#icon-shopping-cart"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div> -->
 </header>
