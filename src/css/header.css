@@ -1,16 +1,35 @@
 .header {
-  padding-left: 32px;
-  padding-right: 32px;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
   background-color: #fff;
+  position: fixed;
 }
-.header-cont {
+.container {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-header {
   display: flex;
   align-items: center;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .list-menu {
@@ -37,4 +56,91 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
+}
+
+.veggie-button {
+  fill: #77ac63;
+}
+
+.veggie-logo {
+  align-items: center;
+  margin-left: 0 auto;
+  display: flex;
+}
+
+.veggie-items {
+  display: flex;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .header-container {
+  }
+
+  .list-menu {
+    display: none;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  .mob-button {
+    background-color: #ffffff;
+    border: transparent;
+    padding: 0;
+  }
+
+  .basket-button {
+    display: none;
+  }
+
+  .mob-menu-basket {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .list-menu,
+  .basket {
+    display: flex;
+  }
+
+  .mob-menu,
+  .mob-button {
+    display: none;
+  }
+  .list-menu {
+    margin-right: 86px;
+  }
+
+  .basket-button {
+    display: flex;
+  }
+
+  .list-header {
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .basket-button {
+    display: flex;
+  }
+
+  .list-menu {
+  }
 }
