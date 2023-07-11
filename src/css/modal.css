@@ -107,13 +107,6 @@
     align-items: center;
   }
 
-  .order-form-checkbox:checked + .order-form-checkbox-text > .own-checkbox {
-    background-color: transparent;
-    border: none;
-    fill: none;
-    border-color: #a1c487;
-  }
-
   .modal-order-form-checkbox {
     appearance: none;
     position: absolute;
@@ -128,7 +121,27 @@
     cursor: pointer;
   }
 
+  .order-form-own-checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .contact-form-checkmark {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .modal-order-form-checkbox:checked > .own-checkbox {
+    fill: #a1c487;
+    stroke: #a1c487;
+    opacity: 1;
+  }
+
   .own-checkbox {
+    position: absolute;
     width: 20px;
     height: 20px;
     border: 1px solid #a1c487;
@@ -137,29 +150,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 3px;
     fill: transparent;
     margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .order-form-own-checkbox {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    right: 14px;
-    cursor: pointer;
-  }
-
-  .contact-form-checkmark {
-    opacity: 1;
-  }
-
-  .contact-form-checkbox:checked + .own-checkbox > contact-form-checkmark {
-    opacity: 1;
   }
 
   .modal-title {
@@ -239,6 +234,11 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
   }
 
+  .contact-form-input:focus {
+    outline: none;
+    border-color: #a1c487;
+  }
+
   .contact-form-message {
     width: 295px;
     height: 132px;
@@ -254,6 +254,11 @@
     border-radius: 20px;
     border: 1px solid rgba(20, 20, 20, 0.2);
     resize: none;
+  }
+
+  .contact-form-message:focus {
+    outline: none;
+    border-color: #a1c487;
   }
 
   .modal-btn {
@@ -298,6 +303,7 @@
     padding: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .modal-close-button {
@@ -371,12 +377,10 @@
     cursor: pointer;
   }
 
-  .contact-form-own-checkbox {
+  .order-form-own-checkbox {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 14px;
-    right: 14px;
     cursor: pointer;
   }
 
@@ -422,14 +426,6 @@
     padding: 0 14px 14px 14px;
   }
 
-  .modal-img-mobile {
-    display: none;
-  }
-
-  .modal-img-desctop {
-    display: none;
-  }
-
   .modal-contact-form {
     display: flex;
     flex-direction: column;
@@ -465,6 +461,11 @@
     border: 1px solid rgba(20, 20, 20, 0.2);
   }
 
+  .contact-form-input:focus {
+    outline: none;
+    border-color: #a1c487;
+  }
+
   .contact-form-message {
     width: 360px;
     height: 145px;
@@ -481,6 +482,11 @@
     border-radius: 20px;
     border: 1px solid rgba(20, 20, 20, 0.2);
     resize: none;
+  }
+
+  .contact-form-message:focus {
+    outline: none;
+    border-color: #a1c487;
   }
 
   .modal-btn {
@@ -510,8 +516,11 @@
 
   .img-girl-in-orange {
     display: initial;
+    position: absolute;
     margin-top: 76px;
-    margin-left: 40px;
+    left: 414px;
+    width: 444px;
+    height: 413;
   }
 }
 
@@ -559,6 +568,10 @@
     padding-left: 0;
   }
 
+  .order-form-checkbox-wrapper {
+    cursor: pointer;
+  }
+
   .modal-plant-container {
     position: relative;
     width: 257px;
@@ -567,7 +580,7 @@
     border-radius: 20px;
   }
 
-  .contact-form-checkbox {
+  .order-form-checkbox {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -576,19 +589,19 @@
     cursor: pointer;
   }
 
-  .contact-form-own-checkbox {
+  .order-form-own-checkbox {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 14px;
-    right: 14px;
     cursor: pointer;
   }
   .contact-form-checkmark {
-    opacity: 1;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
   }
 
-  .contact-form-checkbox:checked + .own-checkbox > contact-form-checkmark {
+  .order-form-checkbox:checked + .own-checkbox > contact-form-checkmark {
     opacity: 1;
   }
 
@@ -645,7 +658,14 @@
     padding-left: 24px;
     align-items: center;
     border-radius: 20px;
+    outline: transparent;
+    transition: border-color var(--transition-duration-and-func);
     border: 1px solid rgba(20, 20, 20, 0.2);
+  }
+
+  .contact-form-input:focus {
+    outline: none;
+    border-color: #a1c487;
   }
 
   .contact-form-message {
@@ -666,11 +686,16 @@
     resize: none;
   }
 
+  .contact-form-message:focus {
+    outline: none;
+    border-color: #a1c487;
+  }
+
   .submit-btn {
     display: flex;
     flex-wrap: wrap;
     min-width: 114px;
-    height: 48px;
+    min-height: 48px;
     padding: 15px 35px;
     align-items: center;
     background-color: #fc8a11;
@@ -689,7 +714,7 @@
 
   .img-girl-in-orange {
     position: absolute;
-    bottom: 3px;
+    bottom: -3px;
     right: 7px;
     margin-left: 40px;
     margin-top: 69px;
