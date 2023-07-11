@@ -104,7 +104,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
     height: 357px;
     background-color: #FAF3E7;
     background-image:
-        url(../img/png/backimg-mob.png);
+        url(/img/png/backimg-mob.png);
     border-radius: 80px;
 margin-top: 40px;
 margin-left: auto;
@@ -170,7 +170,7 @@ margin-left: auto;
             /*margin-left: auto;
             margin-right: auto;*/
         background-image:
-                url(../img/png/backimg-tab.png);
+                url(/img/png/backimg-tab.png);
                 }
             
 }
@@ -206,7 +206,7 @@ margin-left: auto;
     margin-top: 0;
 justify-content: center;
 background-image:
-        url(../img/png/backimg-desck.png);
+        url(/img/png/backimg-desck.png);
 
     }
 }
