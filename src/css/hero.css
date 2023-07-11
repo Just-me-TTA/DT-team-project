@@ -7,6 +7,7 @@
 
     position: relative;
     margin: 0;
+
 }
 
 .container-text-hero {
@@ -111,7 +112,7 @@
         max-width: 375px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 48px;
+        padding-top: 98px;
         padding-bottom: 20px;
         margin: auto;
     }
@@ -269,7 +270,7 @@
         width: 335px;
         margin: 0 auto;
 
-        padding-top: 48px;
+        padding-top: 98px;
         padding-bottom: 20px;
     }
 
@@ -422,9 +423,9 @@
 
 @media screen and (min-width:768px) {
     .container-hero {
-        width: 702px;
+        width: 704px;
         margin: 0 auto;
-        padding-top: 64px;
+        padding-top: 114px;
         padding-bottom: 32px;
     }
 
