@@ -3,7 +3,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: #fff;
-  position: fixed;
+  z-index: 3;
 }
 .container {
   padding-left: 32px;
@@ -14,6 +14,7 @@
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-header {
@@ -53,6 +54,7 @@
 
 .veggie-button {
   fill: #77ac63;
+  margin-right: 8px;
 }
 
 .veggie-logo {
@@ -65,7 +67,7 @@
   display: flex;
 }
 
-.mob-menu {
+.header-mob-menu {
   display: none;
 }
 
@@ -79,7 +81,7 @@
   padding: 0;
 }
 
-.mob-menu {
+.header-mob-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -88,6 +90,10 @@
   height: 100%;
   background-color: #fff;
   padding: 16px 20px 16px 20px;
+}
+
+.logotype {
+  display: flex;
 }
 
 @media screen and (min-width: 375px) {
@@ -144,7 +150,7 @@
     gap: 20px;
   }
 
-  .mob-menu,
+  .header-mob-menu,
   .mob-button {
     display: none;
   }
@@ -169,9 +175,9 @@
     flex-grow: 1;
   }
 
-  .logotype {
+  /* .logotype {
     display: flex;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
