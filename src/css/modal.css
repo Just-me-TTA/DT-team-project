@@ -1,5 +1,5 @@
 /*--Modal-Eduard--*/
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 375px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -31,12 +31,12 @@
       0px 0px 223px 0px rgba(0, 0, 0, 0.05);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  }
+
+  /*.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }*/
 
   .modal-close-button {
     position: absolute;
@@ -67,11 +67,6 @@
   .close-button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-
-
-  
 
   .order-form-modalname {
     color: #141414;
@@ -107,7 +102,24 @@
     border-radius: 20px;
   }
 
-  .contact-form-checkbox {
+  .order-form-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .order-form-checkbox:checked + .order-form-checkbox-text > .own-checkbox {
+    background-color: transparent;
+    border: none;
+    fill: none;
+    border-color: #a1c487;
+  }
+
+  .modal-order-form-checkbox {
+    appearance: none;
+    position: absolute;
+  }
+
+  .order-form-checkbox {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -116,7 +128,24 @@
     cursor: pointer;
   }
 
-  .contact-form-own-checkbox {
+  .own-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #a1c487;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 3px;
+    fill: transparent;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .order-form-own-checkbox {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -124,6 +153,7 @@
     right: 14px;
     cursor: pointer;
   }
+
   .contact-form-checkmark {
     opacity: 1;
   }
@@ -174,11 +204,6 @@
   }
 
   .modal-contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    align-items: center;
-    justify-content: center;
     max-width: 295px;
     margin-left: auto;
     margin-right: auto;
@@ -188,15 +213,19 @@
   .contact-form-input-wrapper {
     display: flex;
     flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
     max-width: 295px;
     max-height: 312px;
     margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contact-form-input {
     width: 295px;
     height: 46px;
-    margin-bottom: 14px;
     color: rgba(20, 20, 20, 0.5);
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
@@ -213,7 +242,6 @@
   .contact-form-message {
     width: 295px;
     height: 132px;
-    margin-bottom: 20px;
     color: rgba(20, 20, 20, 0.5);
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
@@ -228,13 +256,15 @@
     resize: none;
   }
 
-  .submit-btn {
+  .modal-btn {
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .submit-btn {
     max-width: 92px;
     max-height: 42px;
     padding: 12px 24px;
-    align-items: center;
     background-color: #fc8a11;
     border: none;
     border-radius: 100px;
@@ -247,12 +277,13 @@
     letter-spacing: -0.56px;
     text-transform: capitalize;
     cursor: pointer;
+    justify-content: start;
   }
 
   .img-girl-in-orange {
     display: none;
   }
-}*/
+}
 
 @media screen and (min-width: 768px) {
   .modal {
@@ -261,8 +292,8 @@
     left: 50%;
     max-width: 704px;
     transform: translate(-50%, -50%);
-    height: 853px;
-    width: calc((100% - 36px) / 1);
+    min-height: 853px;
+    width: calc((100% - 6px) / 1);
     background-color: #fff;
     padding: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -381,10 +412,11 @@
   }
 
   .modal-img-container {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
     bottom: 0;
-    right: 0;
-    display: block;
     width: 172px;
     height: 142px;
     padding: 0 14px 14px 14px;
@@ -400,10 +432,11 @@
 
   .modal-contact-form {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
     justify-content: start;
     max-width: 400px;
+    width: calc((100% - 6px) / 3);
     margin-bottom: 0;
     margin-left: 0;
     padding-left: 40px;
@@ -412,7 +445,7 @@
   .contact-form-input-wrapper {
     display: block;
     margin-top: 40px;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .contact-form-input {
@@ -450,6 +483,10 @@
     resize: none;
   }
 
+  .modal-btn {
+    margin-top: 20px;
+  }
+
   .submit-btn {
     display: flex;
     min-width: 114px;
@@ -472,13 +509,13 @@
   }
 
   .img-girl-in-orange {
-    display: contents;
+    display: initial;
     margin-top: 76px;
     margin-left: 40px;
   }
 }
 
-/*@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -555,9 +592,6 @@
     opacity: 1;
   }
 
-  .modal-title {
-  }
-
   .modal-title-plant {
     padding-left: 20px;
     padding-top: 40px;
@@ -578,17 +612,11 @@
   }
 
   .modal-img-container {
-    width: 100%;
-    flex-shrink: 0;
+    bottom: 0;
+    right: 0;
+    width: 243px;
+    height: 200px;
     padding: 0 7px 14px 7px;
-  }
-
-  .modal-img {
-    display: none;
-  }
-
-  .modal-img-desctop {
-    display: contents;
   }
 
   .modal-contact-form {
@@ -666,4 +694,4 @@
     margin-left: 40px;
     margin-top: 69px;
   }
-}*/
+}
