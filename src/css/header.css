@@ -79,6 +79,7 @@
   background-color: #ffffff;
   border: transparent;
   padding: 0;
+  margin-left: auto;
 }
 
 .header-mob-menu {
@@ -98,9 +99,9 @@
 
 @media screen and (min-width: 375px) {
   .container {
-    justify-content: right;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 335px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .list-menu {
@@ -115,6 +116,7 @@
     background-color: #ffffff;
     border: transparent;
     padding: 0;
+    margin-left: auto;
   }
 
   .basket-button {
@@ -133,7 +135,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    max-width: 704px;
   }
 
   .header-container {
@@ -144,23 +146,22 @@
     width: 100%;
   }
 
-  .list-menu,
-  .basket {
+  .list-menu {
     display: flex;
     gap: 20px;
+    margin-right: 86px;
   }
 
   .header-mob-menu,
   .mob-button {
     display: none;
   }
-  .list-menu {
-  }
 
   .basket-button {
     display: flex;
     background-color: transparent;
     border: none;
+    padding: 0;
   }
 
   .basket-button-but {
@@ -182,24 +183,28 @@
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1216px;
   }
 
   .basket-button {
     display: flex;
     background-color: transparent;
     border: none;
+    margin-left: auto;
   }
 
   .header-header {
     display: flex;
     width: 100%;
+    justify-content: space-between;
   }
 
   .basket-button-but {
     fill: #fff;
     stroke: #141414;
+  }
+
+  .list-menu {
+    margin-right: 308px;
   }
 }
