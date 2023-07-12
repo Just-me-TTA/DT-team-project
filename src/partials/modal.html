@@ -1,29 +1,29 @@
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
+    <button type="button" class="modal-close-button" data-modal-close>
+      <svg
+        class="close-button"
+        aria-label="close-button"
+        width="32"
+        height="32"
+      >
+        <use href="../img/svg/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="order-form-modalname">YOUR ORDER</h2>
     <form class="modal-order-form">
-      <button type="button" class="modal-close-button" data-modal-close>
-        <svg
-          class="close-button"
-          aria-label="close-button"
-          width="32"
-          height="32"
-        >
-          <use href="../img/svg/symbol-defs.svg#icon-x"></use>
-        </svg>
-      </button>
-      <h2 class="order-form-modalname">YOUR ORDER</h2>
       <ul class="list modal-order-container">
         <li class="modal-plant-container">
           <div class="order-form-checkbox-wrapper">
             <input
               class="modal-order-form-checkbox visually-hidden"
               type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
+              id="user-order"
+              name="user-order1"
               value="true"
               required
             />
-            <label class="order-form-checkbox" for="user-privacy">
+            <label class="order-form-checkbox" for="user-order">
               <span class="own-checkbox">
                 <svg
                   class="order-form-own-checkbox"
@@ -52,12 +52,12 @@
             <input
               class="modal-order-form-checkbox visually-hidden"
               type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
+              id="user-order"
+              name="user-order2"
               value="true"
               required
             />
-            <label class="order-form-checkbox" for="user-privacy">
+            <label class="order-form-checkbox" for="user-order">
               <span class="own-checkbox">
                 <svg
                   class="order-form-own-checkbox"
@@ -90,12 +90,12 @@
             <input
               class="modal-order-form-checkbox visually-hidden"
               type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
+              id="user-order"
+              name="user-order3"
               value="true"
               required
             />
-            <label class="order-form-checkbox" for="user-privacy">
+            <label class="order-form-checkbox" for="user-order">
               <span class="own-checkbox">
                 <svg
                   class="order-form-own-checkbox"
@@ -105,7 +105,7 @@
                 >
                   <use
                     class="contact-form-checkmark"
-                    href="/img/svg/symbol-defs.svg#icon-checkmark"
+                    href="./img/svg/symbol-defs.svg#icon-checkmark"
                   ></use>
                 </svg>
               </span>
@@ -124,8 +124,6 @@
           </div>
         </li>
       </ul>
-    </form>
-    <form class="modal-contact-form">
       <div class="contact-form-input-wrapper">
         <input
           class="contact-form-input"
@@ -160,9 +158,9 @@
           name="user-comment"
           placeholder="Enter comments..."
         ></textarea>
-      </div>
-      <div class="modal-btn">
-        <button type="submit" class="submit-btn">Submit</button>
+        <div class="modal-btn">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
       </div>
       <div class="img-girl-in-orange">
         <picture>
