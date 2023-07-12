@@ -26,7 +26,6 @@
   align-items: center;
   margin: 0;
 }
-
 .list-menu {
   display: none;
 }
@@ -136,9 +135,6 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-  }
-
-  .header-container {
   }
 
   .header-header {
