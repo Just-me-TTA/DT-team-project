@@ -83,6 +83,7 @@
     transform: rotate(-14deg);
     justify-content: center;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-character {
@@ -102,6 +103,7 @@
     border-radius: 62.5rem;
     border: 1px solid #FFF;
     color: var(--alt-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
