@@ -1,19 +1,4 @@
-:root {
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  --primary-text-color: #141414;
-  --alt-text-color: #fff;
-  --primary-background: #F3F3F3;
-  --secondary-backround: #EAF7E5;
-  --hero-background: #A1C487;
-  --orange-color: #FC8A11;
 
-}
-.container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;}
 
 /**
   |============================
@@ -31,3 +16,20 @@
 @import url('./callback.css');
 @import url('./modal.css');
 @import url('./footer.css');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  --primary-text-color: #141414;
+  --alt-text-color: #fff;
+  --primary-background: #F3F3F3;
+  --secondary-backround: #EAF7E5;
+  --hero-background: #A1C487;
+  --orange-color: #FC8A11;
+
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;}
