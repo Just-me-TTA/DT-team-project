@@ -31,13 +31,25 @@
 }
 
 .header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.veggie-button {
+  fill: #77ac63;
+}
+
+.header-logo-veggie {
   color: #141414;
   text-align: center;
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.28;
+  line-height: 1.28px;
+  letter-spacing: -0.56px;
   text-transform: uppercase;
 }
 
@@ -49,11 +61,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
-}
-
-.veggie-button {
-  fill: #77ac63;
-  margin-right: 8px;
 }
 
 .veggie-logo {
