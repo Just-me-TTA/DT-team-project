@@ -134,6 +134,24 @@ footer {
         width: 100%;
 }
 
+.blink {
+        animation: blink-animation 7s infinite;
+}
+
+@keyframes blink-animation {
+        0% {
+                transform: scaleX(1);
+        }
+
+        50% {
+                transform: scaleX(-1);
+        }
+
+        100% {
+                transform: scaleX(1);
+        }
+}
+
 /* 768PX */
 
 @media screen and (min-width: 768px) {
