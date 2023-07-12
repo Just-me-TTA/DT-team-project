@@ -63,6 +63,11 @@
   line-height: 1.28;
 }
 
+.list-link:hover,
+.list-link:focus {
+  color: #77ac63;
+}
+
 .veggie-logo {
   align-items: center;
   margin-left: 0 auto;
@@ -194,6 +199,11 @@
     background-color: transparent;
     border: none;
     margin-left: auto;
+  }
+
+  .basket-button:hover,
+  .basket-button:focus {
+    fill: #77ac63;
   }
 
   .header-header {
