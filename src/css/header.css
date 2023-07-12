@@ -65,7 +65,7 @@
 
 .list-link:hover,
 .list-link:focus {
-  --alt-text-color: #fff;
+  color: #77ac63;
 }
 
 .veggie-logo {
@@ -84,6 +84,11 @@
 
 .basket-button {
   display: none;
+}
+
+.basket-button:hover,
+.basket-button:focus {
+  color: #77ac63;
 }
 
 .mob-button {
