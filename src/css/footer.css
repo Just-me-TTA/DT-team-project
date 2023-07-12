@@ -134,6 +134,24 @@ footer {
         width: 100%;
 }
 
+@keyframes flip {
+        0% {
+                transform: scaleX(1);
+        }
+
+        50% {
+                transform: scaleX(-1);
+        }
+
+        100% {
+                transform: scaleX(1);
+        }
+}
+
+.animated {
+        animation: flip 7s linear infinite;
+}
+
 /* 768PX */
 
 @media screen and (min-width: 768px) {
