@@ -63,6 +63,11 @@
   line-height: 1.28;
 }
 
+.list-link:hover,
+.list-link:focus {
+  --alt-text-color: #fff;
+}
+
 .veggie-logo {
   align-items: center;
   margin-left: 0 auto;
