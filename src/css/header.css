@@ -86,11 +86,6 @@
   display: none;
 }
 
-.basket-button:hover,
-.basket-button:focus {
-  color: #77ac63;
-}
-
 .mob-button {
   background-color: #ffffff;
   border: transparent;
@@ -204,6 +199,11 @@
     background-color: transparent;
     border: none;
     margin-left: auto;
+  }
+
+  .basket-button:hover,
+  .basket-button:focus {
+    fill: #77ac63;
   }
 
   .header-header {
