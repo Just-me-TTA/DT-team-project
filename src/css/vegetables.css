@@ -137,6 +137,7 @@
     transform: rotate(-14deg);
     justify-content: center;
     align-items: center;
+    transition: color var(--transition), scale var(--transition);
 }
 
 .btn-order-svg {
@@ -145,6 +146,7 @@
 
 .btn-order:hover {
     background-color: #a1c487;
+    scale: 1.15;
 }
 
 /**-----------------MOBILE----------------*/

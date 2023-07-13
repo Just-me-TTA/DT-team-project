@@ -704,6 +704,7 @@
         line-height: 1.75rem;
         letter-spacing: -0.07rem;
         text-transform: uppercase;
+        transition: color var(--transition), scale var(--transition), background-color var(--transition);
     }
 
     .girl-hero {
@@ -767,6 +768,7 @@
 .btn-shop-now:hover {
     color: var(--hero-background);
     background-color: var(--secondary-backround);
+    scale: 1.15;
 }
 
 .link-hero:focus,
