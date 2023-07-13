@@ -157,15 +157,13 @@
   color: var(--orange-color);
 }
 
-.link {
-}
-.mobile-menu-basket {
+.m-menu-basket {
   fill: none;
   stroke: var(--alt-text-color);
 }
 
-.mob-menu-link:hover .mob-menu-basket,
-.mob-menu-link:focus .mob-menu-basket {
+.mob-menu-link:hover .m-menu-basket,
+.mob-menu-link:focus .m-menu-basket {
   stroke: var(--orange-color);
 }
 
