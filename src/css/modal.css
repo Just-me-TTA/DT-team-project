@@ -848,7 +848,13 @@
     cursor: pointer;
   }
 
-  .order-form-checkbox:checked + .own-checkbox > contact-form-checkmark {
+  .contact-form-checkmark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .modal-order-form-checkbox:checked > .own-checkbox {
+    fill: #a1c487;
     stroke: #a1c487;
   }
 
