@@ -171,15 +171,16 @@ margin-left: auto;
     .callback-img {
           
             width: 629px;
-            height: 446px;
+            height: 500px;
         justify-content: center;
-        display: flex;
-            /*height: 446px;   */      
-            margin-top: 40px;
+        display: flex;     
+            margin-top: 0px;
             /*margin-left: auto;
             margin-right: auto;*/
         background-image:
                 url(/img/png/backimg-tab.png);
+               
+                padding: 130px;
                 }
             
 }
