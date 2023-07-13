@@ -11,6 +11,7 @@
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -22,11 +23,12 @@
 @media screen and (max-width: 374px) {
   .modal {
     position: absolute;
+    overflow-y: scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 320px;
-    min-height: 903px;
+    max-height: 903px;
     padding: 0;
     background-color: #fff;
     border-radius: 20px;
@@ -130,13 +132,14 @@
   }
 
   .contact-form-checkmark {
-    width: 16px;
-    height: 16px;
+    opacity: 0;
   }
 
-  .modal-order-form-checkbox:checked > .own-checkbox {
-    fill: #a1c487;
-    stroke: #a1c487;
+  .modal-order-form-checkbox:checked
+    + .order-form-checkbox
+    .own-checkbox
+    .contact-form-checkmark {
+    opacity: 1;
   }
 
   .own-checkbox {
@@ -287,11 +290,12 @@
 @media screen and (min-width: 375px) {
   .modal {
     position: absolute;
+    overflow-y: scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 335px;
-    min-height: 903px;
+    max-height: 903px;
     padding: 0;
     background-color: #fff;
     border-radius: 20px;
@@ -400,9 +404,15 @@
     height: 16px;
   }
 
-  .modal-order-form:checked > .own-checkbox {
-    fill: #a1c487;
-    stroke: #a1c487;
+  .contact-form-checkmark {
+    opacity: 0;
+  }
+
+  .modal-order-form-checkbox:checked
+    + .order-form-checkbox
+    .own-checkbox
+    .contact-form-checkmark {
+    opacity: 1;
   }
 
   .own-checkbox {
@@ -557,13 +567,14 @@
     left: 50%;
     max-width: 704px;
     transform: translate(-50%, -50%);
-    min-height: 853px;
+    max-height: 853px;
     width: calc((100% - 6px) / 1);
     background-color: #fff;
     padding: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 20px;
     overflow: hidden;
+    overflow-y: scroll;
   }
 
   .modal-close-button {
@@ -644,8 +655,15 @@
     cursor: pointer;
   }
 
-  .contact-form-checkbox:checked > contact-form-checkmark {
-    stroke: #a1c487;
+  .contact-form-checkmark {
+    opacity: 0;
+  }
+
+  .modal-order-form-checkbox:checked
+    + .order-form-checkbox
+    .own-checkbox
+    .contact-form-checkmark {
+    opacity: 1;
   }
 
   .modal-title {
@@ -772,13 +790,14 @@
     left: 414px;
     top: 451px;
     width: 444px;
-    height: 413;
+    height: 413px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .modal {
     position: absolute;
+    overflow-y: scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -849,13 +868,14 @@
   }
 
   .contact-form-checkmark {
-    width: 16px;
-    height: 16px;
+    opacity: 0;
   }
 
-  .modal-order-form-checkbox:checked > .own-checkbox {
-    fill: #a1c487;
-    stroke: #a1c487;
+  .modal-order-form-checkbox:checked
+    + .order-form-checkbox
+    .own-checkbox
+    .contact-form-checkmark {
+    opacity: 1;
   }
 
   .modal-title-plant {
