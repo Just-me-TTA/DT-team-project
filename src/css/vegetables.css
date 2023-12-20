@@ -93,7 +93,7 @@
 .vegetabes-shadow{
     position: absolute;
     bottom: 60px;
-    transform: translateX(-50%);
+    transform: translateX(-49%);
     flex-shrink: 0;
     fill: #141414;
     opacity: 0.10000000149011612;
